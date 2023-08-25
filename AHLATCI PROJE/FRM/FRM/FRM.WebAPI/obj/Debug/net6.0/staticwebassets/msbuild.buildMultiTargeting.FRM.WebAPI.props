@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FRM.WebAPI.props" />
+</Project>

@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+@using ClientFRM.MvcUI.Models.ApiTypes
+@model List<ArticleItem>
+
+<hitml>
+    <header>
+
+    </header>
+
+    <body>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 m-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Subtitle</h5>
+                            <p class="card-text">@item.authorItem.AuthorName</p>
+                            <p class="card-text">Tarih : @item.DateTime</p>
+                            
+                            <a href="Article/ArticlePage" class="col-12  btn btn-primary">Konular</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </body>
+</hitml>
